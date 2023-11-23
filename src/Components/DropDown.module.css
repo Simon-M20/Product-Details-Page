@@ -1,0 +1,34 @@
+.Dropdown__div {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.DropDown__text {
+    color: inherit;
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.DropDown__title {
+    text-transform: uppercase;
+}
+
+.Dropdown__image {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.DropDown__item {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 8px;
+}

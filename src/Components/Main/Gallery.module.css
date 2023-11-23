@@ -1,0 +1,133 @@
+.Gallery {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 10px 0 18px;
+    gap: 12px;
+}
+
+.Gallery__column {
+    gap: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Gallery__item {
+    width: 83px;
+    height: 89px;
+    margin-bottom: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f1f1f1;
+}
+
+.Gallery__item:nth-child(3) {
+    display: none;
+}
+
+.Gallery__item:first-child {
+    border: 1px solid var(--color-main);
+}
+
+.Gallery__main_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: 200px;
+    max-width: 528px;
+    height: 100%;
+    padding: 119px 30px;
+    background: transparent;
+    flex-direction: column;
+    position: relative;
+}
+
+.Gallery__image {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 20px 12px;
+}
+
+.Gallery__main_image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.Gallery__main_text {
+    color: #6f6f6f;
+    font-family: var(--font-inter);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    position: relative;
+    bottom: unset;
+    left: 0;
+}
+
+.Gallery__pagination {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 90%;
+}
+
+.Gallery__button {
+    width: 20px;
+    height: 20px;
+}
+
+.Gallery__prev {
+    background: #d9d9d9;
+}
+
+.Gallery__next {
+    background-color: var(--color-main);
+}
+
+@media only screen and (min-width: 1020px) {
+    .Gallery {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        width: 50%;
+        padding: 0;
+    }
+
+    .Gallery__column {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: unset;
+    }
+
+    .Gallery__item {
+        width: 152px;
+        height: 115px;
+        margin-bottom: 10px;
+    }
+
+    .Gallery__item:nth-child(3) {
+        display: flex;
+    }
+
+    .Gallery__main_item {
+        max-height: 548px;
+        flex-direction: row;
+        background: #f1f1f1;
+    }
+
+    .Gallery__main_text {
+        position: absolute;
+        bottom: -40px;
+    }
+
+    .Gallery__pagination {
+        display: none;
+    }
+}

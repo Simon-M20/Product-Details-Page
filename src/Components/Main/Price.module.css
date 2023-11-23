@@ -1,0 +1,163 @@
+.Price__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.Price__box {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 50%;
+}
+
+.Price__span {
+    color: #191919;
+    font-family: var(--font-inter);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.Price__regular {
+    color: #191919;
+    font-family: var(--font-inter);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    gap: 12px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.Price__sale {
+    color: #d9d9d9;
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.Price__buy_btn {
+    max-width: 120px;
+    width: 100%;
+    height: 30px;
+    background-color: var(--color-main);
+    color: var(--color-white);
+
+    text-align: center;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: all 0.3s ease-in-out;
+}
+
+.Price__buy_btn:hover,
+.Price__buy_btn:focus {
+    background-color: #c22900;
+}
+
+.Price__add_more {
+    display: flex;
+}
+
+.Price__more_btn {
+    width: 25px;
+    height: 30px;
+
+    color: #191919;
+    font-family: var(--font-inter);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Price__more_btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.Price__cart_btn {
+    display: inline-flex;
+    max-width: 120px;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--color-main);
+    border: 1px solid var(--color-main);
+    transition: all 0.3s ease-in-out;
+}
+
+.Price__cart_btn:hover,
+.Price__cart_btn:focus {
+    border: 1px solid #e73c17;
+    background: #f3f3f3;
+}
+
+@media only screen and (min-width: 1020px) {
+    .Price__container {
+        flex-wrap: nowrap;
+        gap: 85px;
+    }
+
+    .Price__span {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .Price__regular {
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .Price__sale {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .Price__buy_btn {
+        max-width: 202px;
+        height: 60px;
+
+        font-size: 18px;
+    }
+
+    .Price__more_btn {
+        width: 74px;
+        height: 60px;
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .Price__more_btn svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .Price__cart_btn {
+        font-size: 18px;
+        max-width: 202px;
+        height: 60px;
+    }
+}

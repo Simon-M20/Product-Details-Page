@@ -1,0 +1,31 @@
+.Banner__container {
+    background-color: var(--color-bg);
+    height: 100%;
+    max-height: 60px;
+    padding: 20px 80px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.Banner__text {
+    color: var(--color-white);
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.Banner__dropdown {
+    display: flex;
+    justify-content: space-around;
+    gap: 18px;
+}
+
+@media only screen and (min-width: 1020px) {
+    .Banner__container {
+        display: flex;
+    }
+}

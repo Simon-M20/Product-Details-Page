@@ -1,0 +1,29 @@
+.Details__title {
+    color: #191919;
+    font-family: var(--font-inter);
+    text-transform: capitalize;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Details__desc {
+    text-transform: capitalize;
+    color: #191919;
+    font-family: var(--font-inter);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+@media only screen and (min-width: 1020px) {
+    .Details__title {
+        font-size: 18px;
+    }
+
+    .Details__desc {
+        font-size: 18px;
+    }
+}

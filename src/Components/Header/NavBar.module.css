@@ -1,0 +1,129 @@
+.NavBar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 16px 10px;
+}
+
+.NavBar__logo {
+    color: #000;
+    font-family: var(--font-inco);
+    font-size: 48px;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.NavBar__logo_dot {
+    color: var(--color-main);
+    font-family: var(--font-inco);
+    font-style: normal;
+    line-height: normal;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.NavBar__menu {
+    display: block;
+    background-color: var(--color-main);
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar__div {
+    display: flex;
+}
+
+.NavBar__section {
+    width: fit-content%;
+    height: 100%;
+    gap: 5px;
+    display: flex;
+    border: unset;
+}
+
+.NavBar__boxes {
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavBar__boxes:nth-child(2) {
+    padding: 3px 0 0;
+}
+
+.NavBar__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-left: 0;
+    gap: 8px;
+    max-height: 24px;
+    padding-top: 3px;
+}
+
+.NavBar__figure {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.NavBar__boxes div:nth-child(1) {
+    display: none;
+}
+
+@media only screen and (min-width: 1020px) {
+    .NavBar__container {
+        padding: 37px 0;
+        justify-content: space-evenly;
+    }
+    .NavBar__menu {
+        display: none;
+    }
+
+    .NavBar__boxes div:nth-child(1) {
+        display: none;
+    }
+
+    .NavBar__boxes:nth-child(2) {
+        padding: 0 26px;
+    }
+
+    .NavBar__logo {
+        font-weight: 700;
+        line-height: normal;
+        color: #191919;
+        font-size: 48px;
+    }
+
+    .NavBar__logo_dot {
+        font-weight: 700;
+        font-size: 48px;
+    }
+
+    .NavBar__section {
+        width: 925px;
+        gap: 8px;
+
+        height: 76px;
+        border: 2px solid #f0f0f0;
+    }
+
+    .NavBar__boxes {
+        width: 50%;
+    }
+
+    .NavBar__icons {
+        gap: 17px;
+        padding-left: 39px;
+        padding-top: 0;
+        max-height: 100%;
+    }
+}
